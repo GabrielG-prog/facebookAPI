@@ -19,7 +19,7 @@ class Server {
    * @return {Object} connect
    */
   dbConnect() {
-    const host = 'mongodb://localhost:3000/facebookAPI'
+    const host = 'mongodb://localhost:27017/facebookAPI'
     const connect = mongoose.createConnection(host)
 
     connect.on('error', (err) => {
